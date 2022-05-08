@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+           <div  class="custom-control custom-checkbox mb-3">
+               <input type="checkbox" class="custom-control-input" id="check">
+               <label class="custom-control-label" for="check">checkbox</label>
+           </div>
+           <div  class="custom-control custom-radio mb-3">
+            <input type="radio" class="custom-control-input" id="radi">
+            <label class="custom-control-label" for="radi">radio</label>
+        </div> <label  for="ran">range</label>
+            <input type="range" class="custom-range" id="ran">
+           
+        </div>
+        <div  class="custom-file mb-3">
+            <input type="file" class="custom-file-input" id="fil">
+            <label class="custom-file-label" for="fil">enter a file</label>
+        </div>
+        <div>
+            <select class="custom-select mb-3">
+                <option selected>select the item</option>
+                <option value="orange">orange</option>
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="watermelon">watermelon</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

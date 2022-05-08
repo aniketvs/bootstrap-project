@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll spy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    body{
+        position: relative;
+    }
+    #link1{padding-top: 60px;height: 500px;background-color: aqua;
+    }
+    #link2{padding-top: 60px;height: 500px;background-color: darkcyan;
+    }
+    #link3{padding-top: 60px;height: 500px;background-color: goldenrod;
+    }
+    #link4{padding-top: 60px;height: 500px;background-color:orangered;
+    }
+    #link5{padding-top: 60px;height: 500px;background-color: rgb(123, 74, 179);
+    }
+</style>
+</head>
+
+<body data-spy="scroll"  data-target="#navtar">
+    <nav class="navbar  navbar-expand-sm navbar-dark bg-dark   fixed-top" id="navtar">
+        <h2 class="navbar-brand">SCROLLSPY</h2>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav text-center  ml-auto">
+                <li class="nav-item">
+                    <a href="#link1" class="nav-link">link1</a>
+                </li>
+                <li class="nav-item"> <a href="#link2" class="nav-link">link2</a></li>
+                
+                <li class="nav-item dropdown" > 
+                <a href="#link3" class="nav-link dropdown-toggle" data-toggle="dropdown" >link3</a>
+                <ul class="dropdown-menu text-success bg-secondary" >
+                    <li><a href="#link4" class="dropdown-item">link3.1</a></li>
+
+                   <li> <a href="#link5" class="dropdown-item">link3.1</a></li>
+                </ul>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" id="link1">
+        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis pariatur, perspiciatis id vitae laboriosam doloremque ipsam, asperiores deleniti hic assumenda, quibusdam dolores tempore placeat excepturi! Possimus asperiores voluptas iste nam.</p>
+        
+    </div>
+    <div class="container-fluid" id="link2">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis pariatur, perspiciatis id vitae laboriosam doloremque ipsam, asperiores deleniti hic assumenda, quibusdam dolores tempore placeat excepturi! Possimus asperiores voluptas iste nam.</p>
+    
+    </div>
+    <div class="container-fluid" id="link3">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis pariatur, perspiciatis id vitae laboriosam doloremque ipsam, asperiores deleniti hic assumenda, quibusdam dolores tempore placeat excepturi! Possimus asperiores voluptas iste nam.</p>
+    
+    </div>
+    <div class="container-fluid" id="link4">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis pariatur, perspiciatis id vitae laboriosam doloremque ipsam, asperiores deleniti hic assumenda, quibusdam dolores tempore placeat excepturi! Possimus asperiores voluptas iste nam.</p>
+    
+    </div>
+    <div class="container-fluid" id="link5">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis pariatur, perspiciatis id vitae laboriosam doloremque ipsam, asperiores deleniti hic assumenda, quibusdam dolores tempore placeat excepturi! Possimus asperiores voluptas iste nam.</p>
+    
+    </div>
+
+
+
+
+
+</body>
+
+</html>
